@@ -1,0 +1,77 @@
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    margin: 20px auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/*/////////[ rows ]////////*/
+section {
+
+}
+.window {
+    margin: 5px auto;
+    border: 1px solid rgba(255,255,255,0.5);
+    width: 880px;
+    height: 200px;
+    position: relative;
+}
+
+
+.first_row, .second_row, .third_row{
+    position: relative;
+    width: 250px;
+    height: 180px;
+    display: inline-block;
+    padding: 0px;
+    margin: 10px 20px;
+}
+
+.first_row {
+    
+}
+
+.second_row {
+    
+}
+
+.third_row {
+}
+
+.r1_c1 {
+    background-color: rgba(0,0,0,1.0);
+    background-image: url("http://randomcelebs.com/wp-content/uploads/2015/02/Whiplash-Movie-Stills-2.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 
+}
+.r1_c1 img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.sq_box {
+    background-color: rgba(0,0,0,0.3);
+    width: 250px;
+    height: 180px;
+    margin-bottom: 10px;
+    
+}
+
+.r1_c1 img:hover {
+    width: 250px;
+    height: 380px;
+}
+.r1_c2:hover {
+    display: none;
+}
