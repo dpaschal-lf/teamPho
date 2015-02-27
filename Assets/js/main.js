@@ -3,9 +3,7 @@ $(document).ready(function(){
     init();
     
     $(".c1_r1").click(function(){        
-        flipDown(this, 0);
-        
-        
+        flipDown(this, 0);    
     });
     
     $(".c1_r2").click(function(){
@@ -55,7 +53,7 @@ function flipDown(ele, top){
         duration: 'slow'
     });
     
-    $(cloneEle).animate({opacity: .5}, 100, function(){
+    $(cloneEle).animate({opacity: 0}, 100, function(){
         $(this).css("visibility", "hidden");
         $(parentEle).next().children().css('visibility', 'visible');
     });
