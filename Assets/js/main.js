@@ -7,11 +7,11 @@ $(document).ready(function(){
     });
     
     $(".c1_r2").click(function(){
-        flipDown(this, 190);
+        flipDown(this, 180);
     })
     
     $(".c1_r3").click(function(){
-        flipDown(this, 370);
+        flipDown(this, 360);
     })
     
     $(".c2_r1").click(function(){        
@@ -19,11 +19,11 @@ $(document).ready(function(){
     });
     
     $(".c2_r2").click(function(){
-        flipDown(this, 190);
+        flipDown(this, 180);
     })
     
     $(".c2_r3").click(function(){
-        flipDown(this, 370);
+        flipDown(this, 360);
     })
     
     $(".c3_r1").click(function(){        
@@ -31,14 +31,22 @@ $(document).ready(function(){
     });
     
     $(".c3_r2").click(function(){
-        flipDown(this, 190);
+        flipDown(this, 180);
     })
     
     $(".c3_r3").click(function(){
-        flipDown(this, 370);
+        flipDown(this, 360);
     })
     
     $(".c1_r4").click(function(){
+        rollUp($(this).parent(), 3);
+    })
+    
+    $(".c2_r4").click(function(){
+        rollUp($(this).parent(), 3);
+    })
+    
+    $(".c3_r4").click(function(){
         rollUp($(this).parent(), 3);
     })
     
@@ -61,6 +69,8 @@ function flipDown(ele, top){
     var parentEle = $ele.parent();
     var cloneEle = $ele.clone();
     
+    
+    
     $(parentEle).append($(cloneEle));
     
     $(cloneEle).css({'position' : 'absolute', 'top' : top});
@@ -80,6 +90,7 @@ function flipDown(ele, top){
     $(cloneEle).animate({opacity: 0}, 100, function(){
         $(this).remove();
         $(parentEle).next().children().css('visibility', 'visible');
+        parentEle.next().css('opacity', 1);
     });
 }
 
@@ -87,7 +98,7 @@ function rollUp(ele, stop){
     start = ele;
     
     //var topPos = 370;
-    start.animate({borderSpacing: 180}, {
+    start.animate({borderSpacing: 360}, {
         step: function(now,fx) {
         
         $(this).css('-webkit-transform','rotateX('+now+'deg)');
@@ -100,6 +111,7 @@ function rollUp(ele, stop){
     
     start.animate({opacity: 0}, 100, function(){
         if (stop > 1){
+            start.css('-webkit-transform','rotateX(0deg)');
             stop--;
             rollUp(start.prev(), stop);
         }
