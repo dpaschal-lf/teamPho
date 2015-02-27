@@ -14,9 +14,29 @@ $(document).ready(function(){
         flipDown(this, 370);
     })
     
-    $(".c2_r1").click(function(){
-        flipDown(this, 0);
+    $(".c2_r1").click(function(){        
+        flipDown(this, 0);    
     });
+    
+    $(".c2_r2").click(function(){
+        flipDown(this, 190);
+    })
+    
+    $(".c2_r3").click(function(){
+        flipDown(this, 370);
+    })
+    
+    $(".c3_r1").click(function(){        
+        flipDown(this, 0);    
+    });
+    
+    $(".c3_r2").click(function(){
+        flipDown(this, 190);
+    })
+    
+    $(".c3_r3").click(function(){
+        flipDown(this, 370);
+    })
     
 });
 
@@ -54,7 +74,11 @@ function flipDown(ele, top){
     });
     
     $(cloneEle).animate({opacity: 0}, 100, function(){
-        $(this).css("visibility", "hidden");
+        $(this).remove();
         $(parentEle).next().children().css('visibility', 'visible');
     });
+}
+
+function rollUp(ele){
+    start = $(ele).parent();
 }
