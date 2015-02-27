@@ -6,17 +6,17 @@
 }
 
 body {    
-    position: relative;
-    margin: 0 auto;
-    width: 880px;
-    background-color: rgba(20,20,30,0.5);
+    #position: relative;
+    #margin: 0 auto;
+    #width: 880px;
+    background-color: rgba(20,20,30,0.8);
 }
 
 
 
 /*/////////[ rows ]////////*/
-.main_cont {
-
+section {
+    
     
 }
 
@@ -27,7 +27,7 @@ body {
     border: 5px solid rgba(255,255,255,0.5);
     width: 880px;
     height: 200px;
-    overflow: hidden;
+    #overflow: hidden;
     margin-top: 20px;
     background-color: rgba(180, 180, 150,0.8);
 }
@@ -47,36 +47,35 @@ body {
     height: 180px;
     margin-bottom: 10px;
     display: inline-block;
-    border: 1px solid rgba(180, 180, 150,0.5);
+    #border: 1px solid rgba(180, 180, 150,0.5);
 }
 
 .c1_r1 {
-    background-image: url(http://static.rogerebert.com/uploads/review/primary_image/reviews/whiplash-2014/hero_Whiplash-2014-1.jpg);
-    background-size: 100%;
+    background-image: url(http://www.whiplash-movie.net/site/files/images/home_bg.jpg);
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.c1_r1:hover {
-    border: 1px solid white;
+.c2_r1 {
+    background-image: url(http://collider.com/wp-content/uploads/birdman-michael-keaton-edward-norton1.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
-/*////// test ///////*/
-.window:active {
-        #transform: rotate3d(0,1,0,360deg);
-        #-webkit-transform: rotate3d(1,0,0,360deg);
-        #-moz-transform: rotate3d(0,1,0,360deg);
-        height: 400px;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -webkit-transition: 0.5s;
+.c3_r1 {
+    background-image: url(http://static.comicvine.com/uploads/original/0/40/4413280-big-hero-6-21.0_019.00_0196.jpg);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .sq_box p {
-    font-size: 25px;
+    font-size: 20px;
     color: rgba(255,255,255,1.0);
     text-align: center;
     font-family: Arial;
+    padding: 10px;
 }
 
 
