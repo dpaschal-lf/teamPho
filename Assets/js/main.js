@@ -38,6 +38,10 @@ $(document).ready(function(){
         flipDown(this, 370);
     })
     
+    $(".c1_r4").click(function(){
+        rollUp($(this).parent(), 3);
+    })
+    
 });
 
 function init(){
@@ -79,6 +83,25 @@ function flipDown(ele, top){
     });
 }
 
-function rollUp(ele){
-    start = $(ele).parent();
+function rollUp(ele, stop){
+    start = ;
+    
+    //var topPos = 370;
+    start.animate({borderSpacing: 180}, {
+        step: function(now,fx) {
+        
+        $(this).css('-webkit-transform','rotateX('+now+'deg)');
+        $(this).css('-ms-transform','rotateX('+now+'deg)');
+        //$(this).css('top', topPos+'px');
+        //topPos -= .25;
+        },
+        duration: 'slow'
+    });
+    
+    start.animate({opacity: 0}, 100, function(){
+        if (stop > 1){
+            stop--;
+            rollUp(start.prev(), stop);
+        }
+    });
 }
