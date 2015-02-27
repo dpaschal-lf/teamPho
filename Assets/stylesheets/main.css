@@ -1,8 +1,29 @@
+*
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+@font-face{
+    font-family: font1;
+    src: url('../fonts/font1.ttf');
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(30,50,70,0.6);
+    
+}
+
+header h1 {
+    color: rgba(255,255,255,1.0);
+    font-size: 80px;
+    font-family: font1;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
 }
 
 body {
@@ -10,49 +31,37 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    background-color: rgba(52, 73, 94,1.0);
+    background-color: rgba(42, 63, 94,1.0);
 }
-
-
+/*//////////////////////////*/
 
 /*/////////[ rows ]////////*/
 section {
-    
-    
+    width: 970px;
+    height: 100%;
+    margin: 0px auto;
 }
 
 .window {
-    #position: relative;
-    #display: inline-block;
-    margin: 0px auto;
-    border: 5px solid rgba(255,255,255,0.5);
-    width: 880px;
-    height: 200px;
-    #overflow: hidden;
-    margin-top: 50px;
-    background-color: rgba(127, 140, 141,1.0);
+    position: relative;
 }
 
 
 .first_colume, .second_colume, .third_colume {
-    width: 250px;
-    height: 760px;
     display: inline-block;
-    margin: 10px 20px;
-    position: relative;
 }
 
 .sq_box {
     background-color: rgba(0, 0, 0,0.5);
-    width: 250px;
+    width: 300px;
     height: 180px;
-    margin-bottom: 10px;
-    display: inline-block;
-    #border: 1px solid rgba(180, 180, 150,0.5);
+    margin-bottom: 0px;
+    border: 10px solid rgba(127, 140, 141,1.0);
+    margin-bottom: 5px;
 }
 
 .c1_r1 {
-    background-image: url(http://www.whiplash-movie.net/site/files/images/home_bg.jpg);
+    background-image: url(../images/whiplash.jpg);
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -66,33 +75,22 @@ section {
 }
 
 .c2_r1 {
-    background-image: url(http://collider.com/wp-content/uploads/birdman-michael-keaton-edward-norton1.jpg);
+    background-image: url(../images/birdman.jpg);
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .c3_r1 {
-    background-image: url(http://static.comicvine.com/uploads/original/0/40/4413280-big-hero-6-21.0_019.00_0196.jpg);
+    background-image: url(../images/bighero6.jpg);
     background-size: 370px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .sq_box p {
-    font-size: 20px;
+    font-size: 35px;
     color: rgba(255,255,255,1.0);
     text-align: center;
-    font-family: Arial;
-    padding: 10px;
-}
-
-.c1_r1:active {
-}
-
-.c2_r1:active {
-    
-}
-.c3_r1:active {
-    
+    font-family: font1;
 }
 
