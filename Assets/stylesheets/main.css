@@ -5,11 +5,12 @@
           box-sizing: border-box;
 }
 
-body {    
-    #position: relative;
-    #margin: 0 auto;
-    #width: 880px;
-    background-color: rgba(20,20,30,0.8);
+body {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 73, 94,1.0);
 }
 
 
@@ -28,8 +29,8 @@ section {
     width: 880px;
     height: 200px;
     #overflow: hidden;
-    margin-top: 20px;
-    background-color: rgba(180, 180, 150,0.8);
+    margin-top: 50px;
+    background-color: rgba(127, 140, 141,1.0);
 }
 
 
@@ -52,20 +53,20 @@ section {
 
 .c1_r1 {
     background-image: url(http://www.whiplash-movie.net/site/files/images/home_bg.jpg);
-    background-size: 120%;
+    background-size: 250px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .c2_r1 {
     background-image: url(http://collider.com/wp-content/uploads/birdman-michael-keaton-edward-norton1.jpg);
-    background-size: 110%;
+    background-size: 250px;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .c3_r1 {
     background-image: url(http://static.comicvine.com/uploads/original/0/40/4413280-big-hero-6-21.0_019.00_0196.jpg);
-    background-size: 160%;
+    background-size: 370px;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -78,4 +79,13 @@ section {
     padding: 10px;
 }
 
+.c1_r1:active {
+}
+
+.c2_r1:active {
+    
+}
+.c3_r1:active {
+    
+}
 
