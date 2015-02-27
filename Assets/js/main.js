@@ -84,7 +84,7 @@ function flipDown(ele, top){
 }
 
 function rollUp(ele, stop){
-    start = ;
+    start = ele;
     
     //var topPos = 370;
     start.animate({borderSpacing: 180}, {
