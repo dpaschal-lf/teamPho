@@ -58,6 +58,13 @@ section {
     background-position: center center;
 }
 
+.c1_r1, .c1_r2, .c1_r3,
+.c2_r1, .c2_r2, .c2_r3,
+.c3_r1, .c3_r2, .c3_r3 {
+    position: relative;
+    transform-origin: bottom;
+}
+
 .c2_r1 {
     background-image: url(http://collider.com/wp-content/uploads/birdman-michael-keaton-edward-norton1.jpg);
     background-size: 250px;
