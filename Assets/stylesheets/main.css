@@ -5,73 +5,77 @@
           box-sizing: border-box;
 }
 
-body {
-    margin: 20px auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+body {    
+    #position: relative;
+    #margin: 0 auto;
+    #width: 880px;
+    background-color: rgba(20,20,30,0.8);
 }
 
 
 
 /*/////////[ rows ]////////*/
 section {
-
+    
+    
 }
+
 .window {
-    margin: 5px auto;
-    border: 1px solid rgba(255,255,255,0.5);
+    #position: relative;
+    #display: inline-block;
+    margin: 0px auto;
+    border: 5px solid rgba(255,255,255,0.5);
     width: 880px;
     height: 200px;
-    position: relative;
+    #overflow: hidden;
+    margin-top: 20px;
+    background-color: rgba(180, 180, 150,0.8);
 }
 
 
-.first_row, .second_row, .third_row{
-    position: relative;
+.first_colume, .second_colume, .third_colume {
     width: 250px;
-    height: 180px;
+    height: 760px;
     display: inline-block;
-    padding: 0px;
     margin: 10px 20px;
-}
-
-.first_row {
-    
-}
-
-.second_row {
-    
-}
-
-.third_row {
-}
-
-.r1_c1 {
-    background-color: rgba(0,0,0,1.0);
-    background-image: url("http://randomcelebs.com/wp-content/uploads/2015/02/Whiplash-Movie-Stills-2.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    z-index: 
-}
-.r1_c1 img {
     position: relative;
-    width: 100%;
-    height: auto;
 }
+
 .sq_box {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0,0.5);
     width: 250px;
     height: 180px;
     margin-bottom: 10px;
-    
+    display: inline-block;
+    #border: 1px solid rgba(180, 180, 150,0.5);
 }
 
-.r1_c1 img:hover {
-    width: 250px;
-    height: 380px;
+.c1_r1 {
+    background-image: url(http://www.whiplash-movie.net/site/files/images/home_bg.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.r1_c2:hover {
-    display: none;
+
+.c2_r1 {
+    background-image: url(http://collider.com/wp-content/uploads/birdman-michael-keaton-edward-norton1.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+.c3_r1 {
+    background-image: url(http://static.comicvine.com/uploads/original/0/40/4413280-big-hero-6-21.0_019.00_0196.jpg);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sq_box p {
+    font-size: 20px;
+    color: rgba(255,255,255,1.0);
+    text-align: center;
+    font-family: Arial;
+    padding: 10px;
+}
+
+
